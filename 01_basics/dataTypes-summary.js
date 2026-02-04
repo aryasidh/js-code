@@ -53,9 +53,42 @@ typeof(symbol)----symbol
 typeof(bigint)----bigint
 
 
-----FOR NON-PREMETIVES------
+----Reference(FOR NON-PREMETIVES)------
 typeof(OBJECT)----bject
 typeof(array)-----object
 typeof(function)---function (special case)
 
 */
+
+
+/*********************************************************************************************
+stack (premetives), heap(non-premetives)
+stack-----------------------------------value ki copy milti hai
+heap------------------------------------value ki reference milti hai
+*/
+
+let myYtName = "prince kumar"
+
+let anotherName = myYtName
+anotherName = "chaiorcode"
+
+console.log(myYtName);  //prince kumar
+console.log(anotherName);  //chaiorcode
+
+let userOne = {
+    email: "krprince@gmail.com",
+    upi: "myUpiId"
+}
+
+let userTwo = userOne
+userTwo.email = "hites@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
+
+
+
