@@ -4,6 +4,10 @@ var accountPassword = "254412"  //not recomended to use due to scope
 accountCity = "jaipur" //bilkul achha nhi hai but variables aise bhi declared ho skta hai 
 let accountStatus;  //js me variables ko bs declared krke chhor denege mtlb define nhi krenge to undefined print hogi
 
+/* NOTE:--var ko prefer nahi kiya jata kyunki uska scope function-level hota hai aur wo hoisting + re-declaration ki wajah se unexpected bugs create karta hai.
+let block-scoped hota hai, safer hai, aur predictable behavior deta hai.
+ */
+
 // accountId = 2  //not allowed
 
 accountEmail = "hc@gmail.com"
