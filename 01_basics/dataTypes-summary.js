@@ -83,8 +83,8 @@ let userOne = {
 let userTwo = userOne
 userTwo.email = "hites@gmail.com"
 
-console.log(userOne.email);
-console.log(userTwo.email);
+console.log(userOne.email);  //hites@gmail.com
+console.log(userTwo.email);  //hites@gmail.com
 
 
 
