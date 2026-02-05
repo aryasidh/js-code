@@ -1,11 +1,11 @@
 let score = "33abc"
 
-// console.log(typeof score);
-// console.log(typeof(score));
+// console.log(typeof score);  //string
+// console.log(typeof(score));  //string
 
 let valueInNumber = Number(score)
 // console.log(typeof valueInNumber);  //number
-// console.log(valueInNumber);
+// console.log(valueInNumber);  //NAN(not a number)
 
 //     STRING TO NUMBER
 //"33" => 33
@@ -15,7 +15,7 @@ let valueInNumber = Number(score)
 let isloggedIn = 1
 
 let booleanIsLoggedin = Boolean(isloggedIn)
-// console.log(booleanIsLoggedin);
+// console.log(booleanIsLoggedin);  //true
 
 
 //     NUMBER TO BOOLEAN
@@ -27,8 +27,8 @@ let booleanIsLoggedin = Boolean(isloggedIn)
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-// console.log(stringNumber);
-// console.log(typeof stringNumber);
+// console.log(stringNumber);  //33
+// console.log(typeof stringNumber);  //string
 
 //********************OPERATIONS********************* */
 
@@ -83,10 +83,6 @@ let numb1 = 100;
  let numb2 = 100
  ++numb2  //pre increment
  console.log(numb2);
-
- 
- 
-
 
 
 
