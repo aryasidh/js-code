@@ -6,6 +6,9 @@ let accountStatus;  //js me variables ko bs declared krke chhor denege mtlb defi
 
 /* NOTE:--var ko prefer nahi kiya jata kyunki uska scope function-level hota hai aur wo hoisting + re-declaration ki wajah se unexpected bugs create karta hai.
 let block-scoped hota hai, safer hai, aur predictable behavior deta hai.
+
+Direct declaration (x = 10) dangerous hota hai kyunki wo variable automatically global ban jaata hai, chahe tum function ke andar hi kyun na likho.
+Isse accidental bugs, security issues aur debugging problems aati hain.
  */
 
 // accountId = 2  //not allowed
