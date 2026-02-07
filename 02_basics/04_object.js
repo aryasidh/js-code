@@ -60,8 +60,8 @@ const users = [
 
 users[1].email
 console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-
-
+console.log(Object.keys(tinderUser));   // [ 'id', 'name', 'isLoggedIn' ]  all keys of tinderuser (return in array)
+console.log(Object.values(tinderUser));  //[ '12151abc', 'prince', false ]
+console.log(Object.entries(tinderUser));  //[ [ 'id', '12151abc' ], [ 'name', 'prince' ], [ 'isLoggedIn', false ] ]
 
 
