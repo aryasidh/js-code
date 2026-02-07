@@ -35,7 +35,57 @@ console.log(myn1);
 
 console.log("B ", myArr);
 
-//splice
-const myn2 = myArr.splice(1,3)
-console.log("C ", myArr);
-console.log(myn2);
+// //splice
+// const myn2 = myArr.splice(1,3)
+// console.log("C ", myArr);
+// console.log(myn2);
+
+// ======================= SPLICE NOTES =======================
+
+// splice(startIndex, deleteCount, item1, item2, ...)
+
+// 🔑 RULE:
+// splice ka behavior PURELY arguments pe depend karta hai
+// JS "add" ya "delete" keyword nahi dekhti
+
+// ------------------------------------------------------------
+// CASE 1: ONLY DELETE
+// deleteCount > 0  AND koi add item nahi
+let arr1 = [10, 20, 30, 40, 50];
+arr1.splice(1, 2);
+// index 1 se 2 elements delete
+// BEFORE: [10, 20, 30, 40, 50]
+// AFTER : [10, 40, 50]
+
+// ------------------------------------------------------------
+// CASE 2: ONLY ADD
+// deleteCount = 0  → kuch delete nahi hoga
+let arr2 = [10, 20, 30];
+arr2.splice(1, 0, 15);
+// index 1 pe sirf add
+// BEFORE: [10, 20, 30]
+// AFTER : [10, 15, 20, 30]
+
+// ------------------------------------------------------------
+// CASE 3: DELETE + ADD (REPLACE)
+// deleteCount > 0 AND add items present
+let arr3 = [10, 20, 30, 40];
+arr3.splice(1, 2, 99, 100);
+// index 1 se 2 delete, phir 99 & 100 add
+// BEFORE: [10, 20, 30, 40]
+// AFTER : [10, 99, 100, 40]
+
+// ------------------------------------------------------------
+// CASE 4: DELETE TILL END
+// deleteCount missing → startIndex se end tak delete
+let arr4 = [10, 20, 30, 40, 50];
+arr4.splice(2);
+// BEFORE: [10, 20, 30, 40, 50]
+// AFTER : [10, 20]
+
+// ------------------------------------------------------------
+// IMPORTANT:
+// splice ORIGINAL array ko CHANGE karta hai
+// splice RETURN karta hai → deleted elements ka array
+// ============================================================
+
